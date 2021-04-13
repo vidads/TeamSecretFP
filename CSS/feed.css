@@ -19,9 +19,34 @@ body {
 }
 #footbarNav {
   background-color: #121a2d;
-  height: 60px;
 }
 
 .navbar-text {
   margin: 0;
+}
+
+/* Flex box for left side menu */
+
+.side-h {
+  margin-left: 10px;
+}
+.section1 {
+  display: flex;
+  align-items: flex-start;
+  width: 9%;
+  flex-direction: column;
+}
+
+.s1-channel-list,
+.s1-post-list {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  flex-basis: content;
+}
+
+.s1-channel-list ul,
+.s1-post-list ul {
+  list-style: none;
+  padding: 15px;
 }
