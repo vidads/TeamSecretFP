@@ -1,0 +1,53 @@
+body {
+  background-color: #f0eeec;
+}
+
+/*#footer-below {
+  position: relative;
+  max-height: 50px;
+  margin-bottom: 2px;
+  border: 1px solid transparent;
+}
+*/
+/*.bg-custom-2 {
+  background-image: linear-gradient(30deg, #121a2d 20%, #f0eeec 100%);
+}
+*/
+
+#navbarNav {
+  background-color: #121a2d;
+}
+#footbarNav {
+  background-color: #121a2d;
+}
+
+.navbar-text {
+  margin: 0;
+}
+
+/* Flex box for left side menu */
+
+.side-h {
+  margin: 10px;
+}
+.section1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.s1-channel-list,
+.s1-post-list {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  width: 12%;
+  flex-basis: content;
+  background-color: white;
+}
+
+.s1-channel-list ul,
+.s1-post-list ul {
+  list-style: none;
+  padding: 15px;
+}
