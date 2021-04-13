@@ -28,12 +28,11 @@ body {
 /* Flex box for left side menu */
 
 .side-h {
-  margin-left: 10px;
+  margin: 10px;
 }
 .section1 {
   display: flex;
   align-items: flex-start;
-  width: 9%;
   flex-direction: column;
 }
 
@@ -42,7 +41,9 @@ body {
   border: 1px solid black;
   padding: 5px;
   margin: 10px;
+  width: 12%;
   flex-basis: content;
+  background-color: white;
 }
 
 .s1-channel-list ul,
