@@ -33,16 +33,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 8%;
+  width: 10%;
 }
 
 #intro {
   margin: 0;
-  padding-right: 20%;
+  padding-right: 5%;
+  text-align: center;
 }
 
 #pic {
-  width: 75%;
+  min-width: 80%;
 }
 
 #rank {
