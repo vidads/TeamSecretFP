@@ -19,4 +19,9 @@ body {
 }
 #footbarNav {
   background-color: #121a2d;
+  height: 60px;
+}
+
+.navbar-text {
+  margin: 0;
 }
