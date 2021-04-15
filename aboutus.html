@@ -11,15 +11,15 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../CSS/feed.css" />
-    <title>Feed Page</title>
+    <link rel="stylesheet" href="../CSS/aboutstyle2.css" />
+    <title>About Us</title>
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark" id="nav-bar">
-      <a class="navbar-brand" href="#"
-        ><img src="../IMG/legionlogo2.png" height="auto" width="50px"
-      /></a>
+      <a class="navbar-brand" href="#">
+        <img src="../IMG/legionlogo2.png" height="auto" width="50px" />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -34,9 +34,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="../HTML/index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="../HTML/Index.html">Legion</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../HTML/Feed.html">Feed</a>
@@ -56,14 +54,14 @@
         </ul>
       </div>
 
-      <form class="form">
+      <form class="form-inline my-2 my-lg-0">
         <input
-          class="form-control"
+          class="form-control-sm mr-sm-2"
           type="search"
           placeholder="Search"
           aria-label="Search"
         />
-        <button class="btn btn-success my-2 my-sm-0 btn-sm" type="submit">
+        <button class="btn btn-primary btn-sm my-2 my-sm-0" type="submit">
           Search
         </button>
       </form>
@@ -132,53 +130,54 @@
       </div>
     </div>
 
-    <!-- left side box links-->
-    <h3 class="side-h">C++</h3>
-    <div class="section1">
-      <div class="s1-channel-list">
-        <h6>Topics Channel - Full Stack</h6>
-        <ul>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">Html</a></li>
-          <li><a href="#">Java8</a></li>
-          <li><a href="#">Javacript</a></li>
-          <li><a href="#">SQL</a></li>
-          <li><a href="#">Scrum-Agile</a></li>
-        </ul>
-      </div>
-      <div class="s1-post-list">
-        <h6>Post: 500 > View All</h6>
-        <ul>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">Html</a></li>
-          <li><a href="#">Java</a></li>
-          <li><a href="#">Javacript</a></li>
-          <li><a href="#">SQL</a></li>
-          <li><a href="#">Scrum-Agile</a></li>
-        </ul>
+    <!-- Header -->
+    <div class="aboutus">
+      <img id="about-us-logo" src="../IMG/logo1.svg" />
+      <h1 id="about-us-header">About Team Legion</h1>
+    </div>
+
+    <!-- About Us introduction-->
+
+    <section class="bigabout">
+      <div class="box">
+        <p id="intro">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+          reiciendis ad id sed assumenda cum nisi deserunt atque, tenetur
+          pariatur nihil recusandae eius? Ea, tempora molestiae a reiciendis
+          vero cum.
+        </p>
+        <div class="box-1">
+          <img id="pic" src="../IMG/david-removebg.png" />
+          <p id="rank">David, Team Lead</p>
+        </div>
       </div>
 
-      <!-- Right side post get boxes -->
-		
-      <div class="s2-right">
-        <form>
-          <div class="s2-post-wind">
-            <input
-              type="text"
-              id="postbox"
-              placeholder="Write your post here..."
-            />
-          </div>
-        </form>
-            <div class="s2-feeds">Feedbox 1</div>
-			<div class="s2-feeds">Feedbox 1</div>
-			<div class="s2-feeds">Feedbox 1</div>
-			<div class="s2-feeds">Feedbox 1</div>
-			<div class="s2-feeds">Feedbox 1</div>
-			<div class="s2-feeds">Feedbox 1</div>
-			<div class="s2-feeds">Feedbox 1</div>
+      <div class="box">
+        <p id="intro">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          cumque maxime praesentium quisquam dolorem, totam molestias quod
+          dignissimos suscipit eaque asperiores id odit blanditiis deleniti est?
+          Voluptate fugiat magnam repudiandae!
+        </p>
+        <div class="box-1">
+          <img id="pic" src="../IMG/ck-small.png" />
+          <p id="rank">Chong Kai, Member</p>
+        </div>
       </div>
-    </div>
+
+      <div class="box">
+        <p id="intro">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eum
+          tenetur odio, voluptatum aliquam voluptate. Excepturi voluptatem
+          reprehenderit numquam ratione illum dignissimos ipsum accusamus,
+          veritatis, doloremque quas laborum, officiis consequatur?
+        </p>
+        <div class="box-1">
+          <img id="pic" src="../IMG/yk-shrink-removebg.png" />
+          <p id="rank">Yung Keong, Member</p>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <div
