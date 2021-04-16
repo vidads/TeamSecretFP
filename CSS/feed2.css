@@ -2,7 +2,6 @@ body {
   background-color: #f0eeec;
   font-weight: 80px;
   height: auto;
-  overflow: auto;
 }
 
 /*#footer-below {
@@ -33,7 +32,8 @@ body {
 }
 
 #l-nav-bar-title {
-  background-color: aqua;
+  background-color: #121a2d;
+  color: white;
 }
 
 #l-bar-1,
@@ -42,7 +42,7 @@ body {
 #l-bar-4,
 #l-bar-5,
 #l-bar-6 {
-  background-color: grey;
+  background-color: #f0eeec;
 }
 
 .wrap-container {
@@ -52,7 +52,7 @@ body {
 .cardfooter-last {
   margin-bottom: 2.97rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .dcy-main {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -60,6 +60,9 @@ body {
   .dcy-card {
     margin-bottom: 2.77rem;
     margin-left: 0;
+  }
+  .body {
+    font-size: 12px;
   }
 }
 
