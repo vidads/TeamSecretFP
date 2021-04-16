@@ -1,0 +1,40 @@
+body {
+    background-color: #f0eeec;
+  }
+  
+  /*#footer-below {
+    position: relative;
+    max-height: 50px;
+    margin-bottom: 2px;
+    border: 1px solid transparent;
+  }
+  */
+  /*.bg-custom-2 {
+    background-image: linear-gradient(30deg, #121a2d 20%, #f0eeec 100%);
+  }
+  */
+  
+  #navbarNav {
+    background-color:  #f0eeec;
+  }
+  #footbarNav {
+    background-color: #121a2d;
+    height: 60px;
+  }
+  #nav-link {
+    background-color: darkgoldenrod;
+    color:darkgoldenrod
+  }
+  
+  .navbar-text {
+    margin: 0;
+  }
+
+  h6 {
+    background-color:#f0eeec;
+    color:rgb(177, 166, 139);
+  }
+
+  a:hover {
+    background-color:rgb(177, 166, 139)
+  }

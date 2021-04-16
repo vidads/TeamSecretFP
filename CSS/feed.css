@@ -1,5 +1,7 @@
 body {
   background-color: #f0eeec;
+	font-weight: 80px;
+	height: auto;
 }
 
 /*#footer-below {
@@ -14,7 +16,7 @@ body {
 }
 */
 
-#navbarNav {
+#nav-bar {
   background-color: #121a2d;
 }
 #footbarNav {
@@ -28,13 +30,17 @@ body {
 /* Flex box for left side menu */
 
 .side-h {
-  margin-left: 10px;
+  margin: 10px;
+  font-weight: bold;
 }
+
+h6 {
+  font-weight: bold;
+}
+
 .section1 {
-  display: flex;
-  align-items: flex-start;
-  width: 9%;
-  flex-direction: column;
+    height: auto;
+	width: 40%;
 }
 
 .s1-channel-list,
@@ -42,11 +48,26 @@ body {
   border: 1px solid black;
   padding: 5px;
   margin: 10px;
-  flex-basis: content;
+  background-color: white;
+  width: 40%;
+  height: auto;
 }
 
 .s1-channel-list ul,
 .s1-post-list ul {
-  list-style: none;
-  padding: 15px;
+    list-style: none;
+    padding: 15px;
+}
+
+
+
+.s2-right {
+	width: 50%;
+	float: right;
+	border: 1px #050505;
+	
+}
+
+.s2-feeds {
+    background-color: white;
 }

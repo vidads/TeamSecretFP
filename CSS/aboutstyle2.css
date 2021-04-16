@@ -10,19 +10,37 @@ body {
 
 /* Navigation Bar*/
 
-#navbarNav {
+#nav-bar {
   background-color: #121a2d;
 }
 
+/* About us header*/
+
+.aboutus {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+#about-us-header {
+  font-size: 30px;
+  align-self: center;
+  margin: 0;
+}
+
+#about-us-logo {
+  width: 5%;
+}
+
 /* Members about us*/
-.sectionabout {
+.bigabout {
   padding-bottom: 50px;
 }
 
 .box {
   display: flex;
   justify-content: space-between;
-  margin: 50px 100px;
+  margin: 25px 100px;
   padding: 5px;
   border-style: solid;
   border-color: grey;
@@ -64,4 +82,42 @@ body {
 
 .navbar-text {
   margin: 0;
+}
+
+#mobile-searchbar {
+  display: none;
+}
+
+/* Hide pic for small screen*/
+
+@media screen and (max-width: 768px) {
+  #pic,
+  #about-us-logo,
+  #desktop-searchbar {
+    display: none;
+  }
+
+  .box {
+    flex-direction: column;
+    margin: 20px 20px;
+    font-size: 16px;
+  }
+
+  #intro {
+    padding: 0;
+  }
+
+  .box-1 {
+    display: flex;
+    width: auto;
+    font-size: 14px;
+  }
+
+  #mobile-searchbar {
+    display: flex;
+  }
+
+  #searchbox {
+    margin-right: 5px;
+  }
 }

@@ -1,0 +1,73 @@
+body {
+  background-color: #f0eeec;
+  font-weight: 80px;
+  height: auto;
+}
+
+/*#footer-below {
+	position: relative;
+	max-height: 50px;
+	margin-bottom: 2px;
+	border: 1px solid transparent;
+  }
+  */
+/*.bg-custom-2 {
+	background-image: linear-gradient(30deg, #121a2d 20%, #f0eeec 100%);
+  }
+  */
+
+#nav-bar {
+  background-color: #121a2d;
+}
+#footbarNav {
+  background-color: #121a2d;
+}
+
+.navbar-text {
+  margin: 0;
+}
+
+.h7 {
+  font-size: 0.8rem;
+}
+
+#l-nav-bar-title {
+  background-color: #121a2d;
+  color: white;
+}
+
+#l-bar-1,
+#l-bar-2,
+#l-bar-3,
+#l-bar-4,
+#l-bar-5,
+#l-bar-6 {
+  background-color: #f0eeec;
+}
+
+.wrap-container {
+  margin-top: 30px;
+}
+
+.cardfooter-last {
+  margin-bottom: 2.97rem;
+}
+@media (min-width: 768px) {
+  .dcy-main {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .dcy-card {
+    margin-bottom: 2.77rem;
+    margin-left: 0;
+  }
+  .body {
+    font-size: 12px;
+  }
+}
+
+/**Reset Bootstrap*/
+.dropdown-toggle::after {
+  content: none;
+  display: none;
+}
