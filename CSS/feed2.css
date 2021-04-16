@@ -52,7 +52,11 @@ body {
 .cardfooter-last {
   margin-bottom: 2.97rem;
 }
-@media (min-width: 768px) {
+
+#mobile-searchbar {
+  display: none;
+}
+@media (max-width: 768px) {
   .dcy-main {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -63,6 +67,19 @@ body {
   }
   .body {
     font-size: 12px;
+  }
+
+  .wrap-container {
+    margin: 30px;
+    padding-bottom: 30px;
+  }
+
+  #desktop-searchbar {
+    display: none;
+  }
+
+  #mobile-searchbar {
+    display: flex;
   }
 }
 
