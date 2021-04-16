@@ -84,11 +84,16 @@ body {
   margin: 0;
 }
 
+#mobile-searchbar {
+  display: none;
+}
+
 /* Hide pic for small screen*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   #pic,
-  #about-us-logo {
+  #about-us-logo,
+  #desktop-searchbar {
     display: none;
   }
 
@@ -106,5 +111,13 @@ body {
     display: flex;
     width: auto;
     font-size: 14px;
+  }
+
+  #mobile-searchbar {
+    display: flex;
+  }
+
+  #searchbox {
+    margin-right: 5px;
   }
 }
