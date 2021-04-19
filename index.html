@@ -11,7 +11,7 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="CSS/index.css"/>
     <title>Index</title>
   </head>
   <body>
@@ -47,125 +47,79 @@
       </div>
     </nav>
 
-    <!-- Modal Feedback-->
-    <div
-      class="modal fade"
-      id="feedbackModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="recipient-name"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="recipient-email"
-                  placeholder="Name@example.com"
-                />
-              </div>
-              <div class="form-group">
-                <label for="message-text" class="col-form-label"
-                  >Please give your feedback</label
-                >
-                <textarea
-                  class="form-control"
-                  id="message-text"
-                  rows="5"
-                ></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-success">Submit</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
+   
+<!-- Create a Jumbotron : Hero space -->
+<div class="container">
+  <div class="jumbotron">
+
+    <div class="row">
+      <div class="col-s-3">
+        <img src="IMG/logo1.svg"width="460" height="345">
+      </div>
+      <div class="col-s-9">
+    <h1 id= "header">Welcome to the Legion Network</h1> 
+    <p id= "intro">We talk about GITS, scrum and agile method. Topics in discussion also includes coding in HTML, CSS, BASH Script, Python, Java and every other languages. Please click the introductory video and reviews below to know more about us!</p>
+      </div>
+    </div>    
+</div>
+</div>
+
+<div class="container">
+
+
+  <!--Carousell starts here -->
+  <div class="row">
+    <div class="col-s-6">
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../TeamSecretFP/IMG/blank.png">
+        <h4 id= "name">Mavis</h4>
+        <p> "They are one of the best at what they do" </p>
+      </div>
+      <div class="carousel-item">
+        <img src="../TeamSecretFP/IMG/blank.png">
+        <h4 id= "name">Dave</h4>
+        <p> "With work ethics like that, I am always at their service" </p>
+      </div>
+      <div class="carousel-item">
+        <img src="../TeamSecretFP/IMG/blank.png">
+        <h4 id= "name">Jean</h4>
+        <p> "They keep refactoring their codes till 4am" </p>
       </div>
     </div>
-<!-- Create a Jumbotron : Hero space -->
-<div class="container my-5">
-  <div class="Jumbotron">
-      <H1> Welcome to Legion Network</H1>
-      <hr class="my-auto">
-      <p>We talk about GITS, scrum and agile method. Topics in discussion also includes coding in HTML, CSS, BASH Script, Python, Java and every other languages. Please click the introductory video below to know more about us!</p>
+
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
   </div>
 
-      <!--Carousell starts here -->
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-3 col-md-3-sm-6">
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-<div class="carousel-inner">
-<div class="carousel-item active">
-  <img src="../IMG/david-removebg.png" class="d-block w-20" alt="david-removebg">
-</div>
-<div class="carousel-item">
-<img src="../IMG/yk-shrink-removebg.png" class="d-block w-20" alt="yk-shrink-removebg">
-</div>
-<div class="carousel-item">
-<img src="../IMG/ck-small.png" class="d-block w-20" alt="ck-transparent">
-</div>
-</div>
-
-</div>
 </div>
 
 
-
-    <div class="header">
-
-  </div>  
-
-<div>
-        <!-- Display content using the Grid system-->
-
-        <div class="container">
-
-          <div class="row">
-            <div class="col-lg-3">
-                <p><img src="../IMG/logo.png"> </p>
-            </div>
-
-          <div class="row">
-            <div class="col-lg-9">
-
-                <iframe width="420" height="240" src="https://www.youtube.com/embed/UB1O30fR-EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h5>INTRODUCTORY VIDEO</h5>
-            </div>
-
-        
-        </div>
+<div class="row">
+  <div class="col-s-6">
+<iframe width="420" height="240" src="https://www.youtube.com/embed/UB1O30fR-EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </div>
+
+
 
 
     <!-- Footer -->
@@ -203,44 +157,3 @@
 
 
 
-
-
-
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
-</head>
-<body>
-    <div class="header">
-        <h1>Welcome to the Legion Network</h1>
-        <p>
-            I am still testing the push. We talk about GITS, scrum and agile method. Topics in discussion also includes coding in HTML, CSS, BASH Script, Python, Java and every other languages. Please click the introductory video below to know more about us!
-        </p>
-        <section class="section 1">
-            <div class="section1-leftContent">
-                <img src="../IMG/logo.png">
-            </div>
-        </section>
-    </div>  
-    <div class="navbar">
-        <a href="Main.html">Feed</a>
-        <a href="Main.html">About Us</a>
-    </div>
-    <div class="footer">
-        <div class="navbar">
-         <a href="Main.html">Privacy</a>
-         <a href="Main.html">Terms</a>
-         <a href="Main.html">Advertising</a>
-         <a href="Main.html">Ad Choices</a> 
-         <a href="Main.html">Cookies</a>           
-        </div>
-        <h6>Legion 2021</h6>
-    </div>
-</body>
-</html> 
-
--->
