@@ -46,7 +46,7 @@ body {
 }
 
 .wrap-container {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 .cardfooter-last {
@@ -56,22 +56,25 @@ body {
 #mobile-searchbar {
   display: none;
 }
-@media (max-width: 768px) {
+
+.dcy-main {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.dcy-card {
+  margin-bottom: 2.77rem;
+}
+
+@media screen and (max-width: 768px) {
   .dcy-main {
     padding-left: 4rem;
     padding-right: 4rem;
   }
   .dcy-card {
-    margin-bottom: 2.77rem;
-    margin-left: 0;
+    margin-bottom: 4rem;
   }
   .body {
     font-size: 12px;
-  }
-
-  .wrap-container {
-    margin: 30px;
-    padding-bottom: 30px;
   }
 
   #desktop-searchbar {
