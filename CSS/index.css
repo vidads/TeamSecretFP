@@ -3,7 +3,7 @@ body {
   }
   
   
-  #navbarNav {
+  #nav-bar {
     background-color:  #121a2d;
   }
   #footbarNav {
@@ -62,18 +62,28 @@ body {
     background-color: #f0eeec; 
     align-content: center; 
     justify-content: center;
+    padding-top:40px;
   }
 
-  .carousel-inner{
-    border-style: solid;
-    border-color: grey;
-    border-width: 1px; 
-    text-align: center;
-    justify-content: center;
-    font-weight: 300;
-    font-size: 18px;
-    padding-bottom: 8%;
+ .carousel{
+  margin-top: 10px;
+  display:flex;
+}
+.carousel-inner{
+  height: 100px;
+}
+.carousel-caption{
+  color:black;
+  top: 50%;
+}
 
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+  
+  
+  .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
   }
 
   .column {
@@ -86,7 +96,7 @@ body {
   }
 
   img {
-  max-width: 80%;
+  width: 80%;
   height:auto;
   justify-content: center;
   }
@@ -108,6 +118,10 @@ body {
     padding: 15px;
     width: 100%;
   }
+
+  #mobile-searchbar {
+    display: none;
+  }
   
   @media only screen and (min-width: 600px) {
     .col-s-1 {width: 8.33%;}
@@ -124,7 +138,7 @@ body {
     .col-s-12 {width: 100%;}
   }
   
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -137,12 +151,22 @@ body {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-  }
 
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side {
-    width: 100%;
-  }
+    #mediavideo {
+      width : 100%;
+      height : auto;
+    }
 
-}
+    #desktop-searchbar {
+      display: none;
+    }
+
+    #mobile-searchbar {
+      display: flex;
+    }
+
+    #searchbox {
+      margin-right: 5px;
+    }
+  }
+  
