@@ -1,4 +1,4 @@
-body {
+ body {
     background-color: #f0eeec;
   }
   
@@ -27,6 +27,11 @@ body {
     margin: 0;
   }
 
+  h3 {
+    color: #121a2d;
+    font-size: 20px;
+  }
+
   h4 {
     background-color: #f0eeec;
     color: #121a2d;
@@ -36,10 +41,7 @@ body {
     font-style: italic;
     justify-content: center;
     padding: 5px;
-
-
   }
-
 
   h6 {
     background-color: #121a2d;
@@ -73,8 +75,12 @@ body {
   height: 100px;
 }
 .carousel-caption{
-  color:black;
-  top: 50%;
+  color:dimgrey;
+  top: 30%;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+
 }
 
 .carousel-control-prev-icon {
