@@ -112,13 +112,13 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form onsubmit="event.preventDefault(); submitFeedback();">
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Name</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="recipient-name"
+                  id="user_name"
                   placeholder="Enter your name"
                   required
                 />
@@ -128,7 +128,7 @@
                 <input
                   type="email"
                   class="form-control"
-                  id="recipient-email"
+                  id="user_email"
                   placeholder="Name@example.com"
                   required
                 />
@@ -139,7 +139,7 @@
                 >
                 <textarea
                   class="form-control"
-                  id="message-text"
+                  id="fback_text"
                   rows="5"
                   required
                 ></textarea>
@@ -232,6 +232,8 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+
+    <script src="/js/main.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
