@@ -14,9 +14,30 @@ function submitFeedback() {
 
 function addFeedback(uName, uEmail, uFback) {
   var time = new Date(),
-    feedbackTime = `${time.getDate()}/${
-      time.getMonth() + 1
-    }/${time.getFullYear()} ${time.getHours()}:${time.getMinutes()}`;
+    day = time.getDate(),
+    month = time.getMonth() + 1,
+    year = time.getFullYear(),
+    hour = time.getHours(),
+    minutes = time.getMinutes();
+
+  if (day < 10) {
+    day = "0" + day;
+  }
+
+  if (month < 10) {
+    month = "0" + month;
+  }
+
+  if (hour < 10) {
+    hour = "0" + hour;
+  }
+
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+
+  var feedbackTime =
+    day + "/" + month + "/" + year + " " + hour + ":" + minutes;
 
   const item = {
     i_name: uName,
