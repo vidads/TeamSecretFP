@@ -27,6 +27,13 @@ body {
     margin: 0;
   }
 
+  h3 {
+    color: #121a2d;
+    font-weight: 400;
+  }
+
+
+  
   h4 {
     background-color: #f0eeec;
     color: #121a2d;
@@ -36,7 +43,6 @@ body {
     font-style: italic;
     justify-content: center;
     padding: 5px;
-
 
   }
 
@@ -72,9 +78,12 @@ body {
 .carousel-inner{
   height: 100px;
 }
-.carousel-caption{
-  color:black;
-  top: 50%;
+.carousel-caption {
+  color: dimgrey;
+  top: 30%;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
 }
 
 .carousel-control-prev-icon {
