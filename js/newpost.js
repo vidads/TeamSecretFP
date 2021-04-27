@@ -11,9 +11,9 @@ function saveinfo() {
   document.getElementById("gender1").innerHTML = localStorage.getItem("gender");
 
   if (localStorage.getItem("gender") == "Male") {
-    document.getElementById("gender2").src = "img/protection-mask-male.png";
+    document.getElementById("gender2").src = "IMG/protection-mask-male.png";
   } else
-    document.getElementById("gender2").src = "img/protection-mask-female.png";
+    document.getElementById("gender2").src = "IMG/protection-mask-female.png";
 }
 
 // onload form for username and gender
