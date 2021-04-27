@@ -7,7 +7,7 @@ const feedHTMLList = (name, nTitle, title, text, time) =>
                     <img
                       class="rounded-circle"
                       width="45"
-                      src="http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif"
+                      src="img/protection-mask-male.png"
                       alt=""
                     />
                   </div>
