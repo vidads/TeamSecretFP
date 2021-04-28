@@ -27,11 +27,17 @@ body {
     margin: 0;
   }
 
-  h3 {
+  h1{
     color: #121a2d;
-    font-weight: 400;
+    font-weight:bold;
+    font-size:xx-large;
   }
 
+  h3 {
+    color: #121a2d;
+    font-weight:bold;
+    font-size:medium;
+  }
 
   
   h4 {
@@ -68,29 +74,29 @@ body {
     background-color: #f0eeec; 
     align-content: center; 
     justify-content: center;
-    padding-top:40px;
+    padding-top:20px;
   }
 
- .carousel{
+  .carousel{
   margin-top: 10px;
   display:flex;
-}
-.carousel-inner{
+  }
+  .carousel-inner{
   height: 100px;
-}
-.carousel-caption {
-  color: dimgrey;
-  top: 30%;
-  font-style: italic;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
-}
+  }
+  .carousel-caption {
+    color: dimgrey;
+    top: 20%;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size:13px;
+  }
 
-.carousel-control-prev-icon {
+  .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
   }
-  
-  
+    
   .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
   }
@@ -98,7 +104,7 @@ body {
   .column {
     float: left;
   }
-  
+    
   /* Left and right column */
   .column.side {
     width: 30%;
@@ -115,13 +121,13 @@ body {
     width: 100%;
     height: auto;
   }
-  
+
   .row:after {
     content: "";
     clear: both;
     display: table;
   }
-  
+
   [class*="col-"] {
     float: left;
     padding: 15px;
@@ -177,5 +183,11 @@ body {
     #searchbox {
       margin-right: 5px;
     }
+
+    img {
+      width: 30%;
+      height:auto;
+      justify-content: center;
+      }
   }
   
