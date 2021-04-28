@@ -11,7 +11,7 @@ const feedHTMLList = (name, nTitle, title, text, time) =>
                       alt=""
                     />
                   </div>
-                  <div class="ml-2">
+                  <div class="ml-2" id="card_header">
                     <div class="h5 m-0">${name}</div>
                     <div class="h7 text-muted">${nTitle}</div>
                   </div>

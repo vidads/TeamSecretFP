@@ -17,7 +17,7 @@ body {
   */
 #myModal {
   margin: auto;
-  width: 50%;
+  width: 30%;
   height: 35%;
 }
 
@@ -104,6 +104,36 @@ body {
 
   #mobile-searchbar {
     display: flex;
+  }
+
+  #myTab {
+    font-size: 12px;
+    tab-size: 2;
+  }
+  #username1 {
+    font-size: 80%;
+  }
+
+  div.h5,
+  div.h7,
+  h5.card-title,
+  p.card-text,
+  div.card-footer {
+    font-size: 80%;
+  }
+
+  #myModal {
+    font-size: 80%;
+    width: 50%;
+    height: 29%;
+  }
+
+  input#username.form-control {
+    font-size: 80%;
+  }
+
+  .btn.btn-primary {
+    font-size: 80%;
   }
 }
 
