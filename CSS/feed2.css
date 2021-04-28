@@ -19,7 +19,7 @@ body {
 #myModal {
   margin: auto;
   width: 30%;
-  height: 40%;
+  height: 50%;
 }
 
 #nav-bar {
@@ -126,7 +126,7 @@ body {
   #myModal {
     font-size: 90%;
     width: 50%;
-    height: 29%;
+    height: 45%;
   }
 
   input#username.form-control {
@@ -134,7 +134,7 @@ body {
   }
 
   .btn.btn-primary {
-    font-size: 90%;
+    font-size: 80%;
   }
 }
 
