@@ -22,6 +22,11 @@ body {
   height: 50%;
 }
 
+#agender {
+  margin: 0;
+  padding: 1px;
+}
+
 #nav-bar {
   background-color: #121a2d;
 }
@@ -37,10 +42,9 @@ body {
   font-size: 0.8rem;
 }
 
-.username {
-  margin-left: 20px;
-  padding-top: 15px;
-  font-size: 20px;
+label.col-form-label,
+label.gender-text {
+  font-weight: bold;
 }
 
 #l-nav-bar-title {
