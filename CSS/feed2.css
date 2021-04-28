@@ -15,10 +15,11 @@ body {
 	background-image: linear-gradient(30deg, #121a2d 20%, #f0eeec 100%);
   }
   */
+
 #myModal {
   margin: auto;
   width: 30%;
-  height: 35%;
+  height: 40%;
 }
 
 #nav-bar {
@@ -123,17 +124,17 @@ body {
   }
 
   #myModal {
-    font-size: 80%;
+    font-size: 90%;
     width: 50%;
     height: 29%;
   }
 
   input#username.form-control {
-    font-size: 80%;
+    font-size: 90%;
   }
 
   .btn.btn-primary {
-    font-size: 80%;
+    font-size: 90%;
   }
 }
 
