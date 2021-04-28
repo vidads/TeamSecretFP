@@ -11,7 +11,12 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="CSS/aboutstyle2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="CSS/aboutstyle.css" />
+
     <title>About Us</title>
   </head>
   <body>
@@ -111,8 +116,11 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <form onsubmit="event.preventDefault(); submitFeedback();">
+          <div class="modal-body" id="feedbackModal">
+            <form
+              id="feedbackForm"
+              onsubmit="event.preventDefault(); submitFeedback();"
+            >
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Name</label>
                 <input
@@ -129,7 +137,7 @@
                   type="email"
                   class="form-control"
                   id="user_email"
-                  placeholder="Name@example.com"
+                  placeholder="name@example.com"
                   required
                 />
               </div>
@@ -160,54 +168,148 @@
       </div>
     </div>
 
-    <!-- Header -->
-    <div class="aboutus">
-      <img id="about-us-logo" src="IMG/logo1.svg" />
-      <h1 id="about-us-header">About Team Legion</h1>
+    <div class="container text-center">
+      <h3>Our Mission</h3>
+      <hr />
+      <p id="mission">
+        We are committed to build an all-inclusive and holistic platform while
+        creating a community of support from developers with different set of
+        skills and expertise. The platform provides a conducive peer learning
+        environment that builds upon everyone strengths.
+      </p>
+      <h4>Our Members</h4>
+      <hr id="hr2" />
+      <div class="row" id="members">
+        <div class="col-xl-4 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-4 px-4">
+            <img
+              src="IMG/yk-small.png"
+              alt=""
+              width="100"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+            />
+            <h5 class="mb-0">Yung Keong</h5>
+            <span class="small text-uppercase text-muted">Co-Founder</span>
+            <ul class="social mb-0 list-inline mt-3">
+              <li class="list-inline-item">
+                <a href="#" target="_blank" class="social-link"
+                  ><i class="fa fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" target="_blank" class="social-link"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" target="_blank" class="social-link"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/in/keith-wong11/"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-4 px-4">
+            <img
+              src="IMG/david-small.png"
+              alt=""
+              width="100"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+            />
+            <h5 class="mb-0">David Seah</h5>
+            <span class="small text-uppercase text-muted">Founder</span>
+            <ul class="social mb-0 list-inline mt-3">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/vidads"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fa fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://twitter.com/icydrink1"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/in/david-seah-455b89109/"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-4 px-4">
+            <img
+              src="IMG/ck-small.png"
+              alt=""
+              width="100"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+            />
+            <h5 class="mb-0">Chong Kai</h5>
+            <span class="small text-uppercase text-muted">Co-Founder</span>
+            <ul class="social mb-0 list-inline mt-3">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/imnotnotyou/"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fa fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://twitter.com/TaNcHoNgKaI"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/tan_chongkai/"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/in/tan-chong-kai-a3827020b/"
+                  target="_blank"
+                  class="social-link"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- About Us introduction-->
-
-    <section class="bigabout">
-      <div class="box">
-        <p id="intro">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-          reiciendis ad id sed assumenda cum nisi deserunt atque, tenetur
-          pariatur nihil recusandae eius? Ea, tempora molestiae a reiciendis
-          vero cum.
-        </p>
-        <div class="box-1">
-          <img id="pic" src="IMG/david-removebg.png" />
-          <p id="rank">David, Team Lead</p>
-        </div>
-      </div>
-
-      <div class="box">
-        <p id="intro">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          cumque maxime praesentium quisquam dolorem, totam molestias quod
-          dignissimos suscipit eaque asperiores id odit blanditiis deleniti est?
-          Voluptate fugiat magnam repudiandae!
-        </p>
-        <div class="box-1">
-          <img id="pic" src="IMG/ck-small.png" />
-          <p id="rank">Chong Kai, Member</p>
-        </div>
-      </div>
-
-      <div class="box">
-        <p id="intro">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eum
-          tenetur odio, voluptatum aliquam voluptate. Excepturi voluptatem
-          reprehenderit numquam ratione illum dignissimos ipsum accusamus,
-          veritatis, doloremque quas laborum, officiis consequatur?
-        </p>
-        <div class="box-1">
-          <img id="pic" src="IMG/yk-shrink-removebg.png" />
-          <p id="rank">Yung Keong, Member</p>
-        </div>
-      </div>
-    </section>
 
     <!-- Footer -->
     <div
@@ -233,7 +335,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/feedback.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

@@ -1,5 +1,5 @@
-const feedHTMLList = (name, nTitle, title, text, time) => 
-`<div class="card dcy-card">
+const feedHTMLList = (name, nTitle, title, text, time) =>
+  `<div class="card dcy-card">
             <div class="card-header">
               <div class="d-flex justify-content-between align-items-center">
                 <div class="d-flex justify-content-between align-items-center">
@@ -7,7 +7,7 @@ const feedHTMLList = (name, nTitle, title, text, time) =>
                     <img
                       class="rounded-circle"
                       width="45"
-                      src="http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif"
+                      src="IMG/protection-mask-male.png"
                       alt=""
                     />
                   </div>
@@ -72,7 +72,7 @@ class feedController {
   constructor() {
     this._items = [];
   }
-  
+
   //method to add the items into the array
   addItem(name, nTitle, title, text, time) {
     const itemObj = {
@@ -83,9 +83,9 @@ class feedController {
       oTime: time,
     };
     this._items.push(itemObj);
-}
-    
-    displayItem() {
+  }
+
+  displayItem() {
     var afeedHTMLList = [];
     for (var i = 0; i < this._items.length; i++) {
       const item = this._items[i];
@@ -98,7 +98,7 @@ class feedController {
       );
       afeedHTMLList.push(feedHTML);
     }
-      const pFeed = afeedHTMLList.join(`\n`);
+    const pFeed = afeedHTMLList.join(`\n`);
     document.querySelector(".PostContent").innerHTML = pFeed;
   }
 }
