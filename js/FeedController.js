@@ -1,4 +1,4 @@
-const feedHTMLList = (name, nTitle, title, text, time) =>
+const feedHTMLList = (genderImg, name, gender, text, time) =>
   `<div class="card dcy-card">
             <div class="card-header">
               <div class="d-flex justify-content-between align-items-center">
@@ -7,13 +7,13 @@ const feedHTMLList = (name, nTitle, title, text, time) =>
                     <img
                       class="rounded-circle"
                       width="45"
-                      src="IMG/protection-mask-male.png"
+                      src="${genderImg}"
                       alt=""
                     />
                   </div>
                   <div class="ml-2" id="card_header">
                     <div class="h5 m-0">${name}</div>
-                    <div class="h7 text-muted">${nTitle}</div>
+                    <div class="h7 text-muted">${gender}</div>
                   </div>
                 </div>
                 <div>
@@ -45,12 +45,6 @@ const feedHTMLList = (name, nTitle, title, text, time) =>
               <div class="text-muted h7 mb-2">
                 <i class="fa fa-clock-o"></i>${time}
               </div>
-              <a class="card-link" href="#">
-                <h5 class="card-title">
-                  ${title}
-                </h5>
-              </a>
-
               <p class="card-text">
                 ${text}
               </p>
@@ -62,7 +56,7 @@ const feedHTMLList = (name, nTitle, title, text, time) =>
               <a href="#" class="card-link"
                 ><i class="fa fa-comment"></i> Comment</a
               >
-              <a href="#" class="card-link"
+              <a onclick="myFunction()" class="need-share-button-default" 
                 ><i class="fa fa-mail-forward"></i> Share</a
               >
             </div>
@@ -74,15 +68,16 @@ class feedController {
   }
 
   //method to add the items into the array
-  addItem(name, nTitle, title, text, time) {
+  addItem(genderImg, name, gender, text, time) {
     const itemObj = {
+      oGenderImg: genderImg,
       oName: name,
-      onTitle: nTitle,
-      oTitle: title,
+      oGender: gender,
       oText: text,
       oTime: time,
     };
     this._items.push(itemObj);
+    localStorage.setItem("itemObj", JSON.stringify(itemObj));
   }
 
   displayItem() {
@@ -90,9 +85,9 @@ class feedController {
     for (var i = 0; i < this._items.length; i++) {
       const item = this._items[i];
       const feedHTML = feedHTMLList(
+        item.oGenderImg,
         item.oName,
-        item.onTitle,
-        item.oTitle,
+        item.oGender,
         item.oText,
         item.oTime
       );

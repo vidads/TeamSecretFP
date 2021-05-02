@@ -90,6 +90,11 @@ label.gender-text {
   margin-left: 90px;
   margin-top: 20px;
 }
+div.card-footer {
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+}
 
 @media screen and (max-width: 768px) {
   .dcy-main {
@@ -129,8 +134,8 @@ label.gender-text {
 
   #myModal {
     font-size: 90%;
-    width: 50%;
-    height: 45%;
+    width: 60%;
+    height: 29%;
   }
 
   input#username.form-control {
@@ -138,7 +143,7 @@ label.gender-text {
   }
 
   .btn.btn-primary {
-    font-size: 80%;
+    font-size: 70%;
   }
 }
 

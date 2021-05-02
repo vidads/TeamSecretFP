@@ -4,29 +4,29 @@ const feedsControl = new feedController();
 function loadData() {
   //add Items to the ProductionController Class - items currently are hard coded into the class
   feedsControl.addItem(
+    "IMG/protection-mask-male.png",
     "Seah David",
-    "Always Noisy",
-    "Lorem ipsum dolor sit amet, consectetur adip",
+    "Male",
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quore cusandae nulla rem eos ipsa praesentium esse magnam nemo dolor sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.",
-    "5mins ago",
+    "5mins ago"
   );
 
   feedsControl.addItem(
+    "IMG/protection-mask-male.png",
     "Tan Chong Kai",
-    "Haiyo",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur deserunt illo esse distinctio.",
+    "Male",
     "adipisicing elit. Ipsa, excepturi. Doloremque, reprehenderit!",
-    "1 hour ago",
+    "1 hour ago"
   );
 
   feedsControl.addItem(
+    "IMG/protection-mask-male.png",
     "Yung Keong",
-    "Always very Tired",
-    "Lorem ipsum dolor sit amet, consectetur.",
+    "Male",
     "Lorem ipsum dolor sit amet consectetur dfsdlfksl fkdsjfaiixkjflksfj tates.",
-    "2 hours ago",
+    "2 hours ago"
   );
-  
+
   feedsControl.displayItem();
 }
 loadData();
