@@ -157,7 +157,7 @@ function appendToDom(data) {
       ${data.comment}
     </p>
     <div class="box">
-      <img id="load3" src="${data.imageUrl}" class="postimg" />
+      <img id="load3" src="${data.imageUrl}" alt="" class="postimg" />
     </div>
   </div>
   <div class="card-footer">
