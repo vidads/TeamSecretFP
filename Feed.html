@@ -227,6 +227,7 @@
               class="form-control"
               id="username"
               placeholder="Enter your name"
+              maxlength="25"
               required
             />
           </div>
@@ -320,6 +321,7 @@
                       id="message"
                       rows="3"
                       placeholder="Post Feed Here"
+                      maxlength="250"
                     ></textarea>
                   </div>
                 </div>
@@ -340,7 +342,9 @@
                       <label class="custom-file-label" for="customFile"
                         >Upload image</label
                       >
-                      <img id="load2" class="postimg" />
+                      <div class="box">
+                        <img id="load2" class="postimg" />
+                      </div>
                     </div>
                   </div>
                   <div class="py-4"></div>
@@ -354,7 +358,7 @@
                     id="submitBtn"
                     onclick="saveinfo2()"
                   >
-                    Share
+                    Post
                   </button>
                 </div>
                 <div class="btn-group">

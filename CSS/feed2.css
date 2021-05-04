@@ -81,15 +81,34 @@ label.gender-text {
   margin-bottom: 2.77rem;
 }
 
-#load2.postimg {
-  height: 150px;
-  width: 60%;
-  object-fit: contain;
-  outline: none;
+/* #load2.postimg {
+  /* height: 150px;
+  width: 60%; */
+/* object-fit: contain; */
+/* outline: none;
   border: none;
   margin-left: 90px;
-  margin-top: 20px;
+  margin-top: 20px; */
+/* width: 40%;
+  align-self: center;
+} */
+
+#load2.postimg {
+  max-width: 100%;
+  max-height: 100%;
+  /* display: block; */
 }
+
+.box {
+  /* border: 5px solid black; */
+  text-align: center;
+  /* margin-left: 300px;
+  margin-right: 200px; */
+  margin: auto;
+  height: 200px;
+  width: 300px;
+}
+
 div.card-footer {
   display: flex;
   flex-direction: column;
@@ -144,6 +163,20 @@ div.card-footer {
 
   .btn.btn-primary {
     font-size: 70%;
+  }
+
+  #load2.postimg {
+    max-width: 80%;
+    max-height: 80%;
+    /* display: block; */
+  }
+
+  .box {
+    /* border: 5px solid black; */
+    text-align: center;
+    margin: auto;
+    height: 200px;
+    width: 300px;
   }
 }
 
