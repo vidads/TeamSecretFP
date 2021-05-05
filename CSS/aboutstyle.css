@@ -25,7 +25,7 @@ body::after {
 }*/
 
 #header-grpPic {
-  background-image: url("/IMG/Grp1_crop.png");
+  background-image: url("../IMG/Grp1_crop.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 550px;
