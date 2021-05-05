@@ -7,7 +7,38 @@
 /* Body */
 body {
   font: 400 15px/1.8 Lato, sans-serif;
-  color: #777;
+  color: #000;
+}
+
+/*
+body::after {
+  content: "";
+  background-image: url("/IMG/Grp1.jpg");
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}*/
+
+#header-grpPic {
+  background-image: url("/IMG/Grp1_crop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+
+.ourMission {
+  display: flex;
+  padding: 0px 100px 50px 100px;
+}
+
+.ourMission img {
+  width: 40%;
+  height: 40%;
 }
 
 h3 {
@@ -25,8 +56,14 @@ hr {
   width: 25%;
 }
 
+.mem-hr {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  width: 40%;
+}
+
 #mission {
-  padding: 15px 150px 50px 150px;
+  padding-left: 20px;
   font-size: 17px;
 }
 
@@ -34,6 +71,12 @@ hr {
   margin-top: 0px;
   margin-bottom: 20px;
   width: 15%;
+}
+
+#no1,
+#no2,
+#no3 {
+  background-color: rgba(245, 245, 245, 0.6);
 }
 
 .social-link {
@@ -66,13 +109,16 @@ hr {
   margin: 0;
 }
 
-#mobile-searchbar {
+#mobile-searchbar,
+#grpPic {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
   #desktop-searchbar,
-  .img_overlay {
+  .img_overlay,
+  body::after,
+  #header-grpPic {
     display: none;
   }
 
@@ -98,9 +144,21 @@ hr {
     width: 70%;
   }
 
+  .ourMission {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #grpPic {
+    display: block;
+    width: auto;
+  }
+
   #mission {
-    padding: 0 0 20px 0;
+    padding: 15px 0 20px 0;
     margin: 0px;
+    text-align: center;
   }
 
   #hr2 {
