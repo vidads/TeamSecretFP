@@ -20,6 +20,23 @@ function submitFeedback() {
       .find('input[type="text"], input[type="email"], textarea')
       .val("");
   });
+
+  //Showing alert message after feedback is submitted
+  document.getElementById("nav-bar").innerHTML += `<div class="fixed-top">
+  <div class="alert alert-success alert-dismissible mx-4 mt-2">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <strong>Thank you!</strong> We appreciate your valuable feedback!
+  </div>
+  </div>`;
+
+  //Auto close the alert message after 2 seconds
+  window.setTimeout(function () {
+    $(".alert")
+      .fadeTo(1000, 0)
+      .slideUp(1000, function () {
+        $(this).remove();
+      });
+  }, 2000);
 }
 
 function addFeedback(uName, uEmail, uFback) {
